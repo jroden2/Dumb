@@ -9,13 +9,25 @@ import (
 	"testing"
 )
 
-func TestToCamelCase(t *testing.T) {
-  t.Run("Should return successful with cAmElCaSe", func(t *testing.T)){
-    input := "camelcase"
-    want := "cAmElCaSe"
-    
-    got := ToCamelCase(input)
-    fmt.Println(got)
+func TestToReverseCamelCase(t *testing.T) {
+	t.Run("Should return successful with rEvErSeCaMeLcAsE", func(t *testing.T) {
+		input := "reversecamelcase"
+		want := "rEvErSeCaMeLcAsE"
+
+		got := ToReverseCamelCase(input)
+		fmt.Println(got)
 		assert.Equal(t, want, got)
-  }
+	})
 }
+
+func TestToCamelCase(t *testing.T) {
+	t.Run("Should return successful with CaMeLcAsE", func(t *testing.T) {
+		input := "camelcase"
+		want := "CaMeLcAsE"
+
+		got := ToCamelCase(input)
+		fmt.Println(got)
+		assert.Equal(t, want, got)
+	})
+}
+
