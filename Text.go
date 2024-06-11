@@ -1,6 +1,6 @@
 package github.com/jroden2/dumb
 
-func ToCamelCase(input string) {
+func ToCamelCase(input string) string {
 	uppercase := false
 	output := ""
 
