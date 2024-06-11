@@ -1,4 +1,4 @@
-package main
+package github.com/jroden2/dumb
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func main() {
+func Undownload() {
 	const col = 30
 	bar := fmt.Sprintf("\x0c[%%-%vs]", col)
 	for i := 0; i < col; i++ {
